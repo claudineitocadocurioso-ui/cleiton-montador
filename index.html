@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleiton, o Montador | Montagem de Móveis em Ribeirão Preto e Região</title>
+  <meta name="description" content="Montagem e desmontagem de móveis em Ribeirão Preto e região, com cuidado, agilidade e capricho. Fale com Cleiton pelo WhatsApp e peça seu orçamento." />
+  <meta name="theme-color" content="#6d28d9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0a12;
+      --bg-2:#12101d;
+      --card:#171426;
+      --card-2:#1d1830;
+      --text:#f5f4ff;
+      --muted:#c2bedb;
+      --line:rgba(255,255,255,.08);
+      --primary:#7c3aed;
+      --primary-2:#a855f7;
+      --primary-soft:rgba(124,58,237,.16);
+      --whatsapp:#25D366;
+      --whatsapp-dark:#0d3b22;
+      --white:#ffffff;
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+      --radius:24px;
+      --radius-lg:32px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(124,58,237,.22), transparent 25%),
+        radial-gradient(circle at 85% 10%, rgba(168,85,247,.12), transparent 18%),
+        linear-gradient(180deg, #09080f 0%, #0f0d18 45%, #0b0a12 100%);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .container{
+      width:min(var(--max), calc(100% - 32px));
+      margin-inline:auto;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:99;
+      background:rgba(11,10,18,.72);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+
+    .nav{
+      min-height:82px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      font-weight:900;
+      letter-spacing:-.02em;
+    }
+
+    .brand-icon{
+      width:46px;height:46px;border-radius:16px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--primary), var(--primary-2));
+      box-shadow:0 12px 30px rgba(124,58,237,.35);
+      font-size:22px;
+    }
+
+    .brand small{
+      display:block;
+      color:#c7bfff;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .brand strong{
+      display:block;
+      font-size:18px;
+      line-height:1.05;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:24px;
+      color:var(--muted);
+      font-weight:700;
+      font-size:14px;
+    }
+
+    .nav-links a:hover{color:var(--white)}
+
+    .btn{
+      border:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:16px;
+      cursor:pointer;
+      font-weight:800;
+      font-size:15px;
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:linear-gradient(135deg, var(--primary), var(--primary-2));
+      color:white;
+      box-shadow:0 16px 35px rgba(124,58,237,.32);
+    }
+    .btn-soft{
+      background:rgba(255,255,255,.04);
+      color:white;
+      border:1px solid rgba(255,255,255,.08);
+    }
+    .btn-whatsapp{
+      background:var(--whatsapp);
+      color:#08160d;
+      box-shadow:0 16px 35px rgba(37,211,102,.25);
+    }
+
+    .wa-icon{
+      width:18px;height:18px;display:inline-block;flex:0 0 auto;
+    }
+
+    .hero{
+      padding:90px 0 56px;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.06fr .94fr;
+      gap:36px;
+      align-items:center;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:var(--primary-soft);
+      border:1px solid rgba(168,85,247,.25);
+      color:#dcc8ff;
+      font-size:13px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    .badge-dot{
+      width:8px;height:8px;border-radius:50%;
+      background:#c084fc;
+      box-shadow:0 0 0 6px rgba(192,132,252,.14);
+    }
+
+    h1{
+      margin:20px 0 16px;
+      font-size:clamp(38px, 6vw, 68px);
+      line-height:.98;
+      letter-spacing:-.045em;
+      max-width:740px;
+    }
+
+    .hero p{
+      margin:0 0 28px;
+      font-size:clamp(17px,2vw,20px);
+      color:var(--muted);
+      max-width:670px;
+    }
+
+    .hero strong{color:white}
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-bottom:24px;
+    }
+
+    .hero-points{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 18px;
+      color:#ddd9ef;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    .hero-points span{
+      display:flex; align-items:center; gap:8px;
+    }
+
+    .point{
+      width:22px;height:22px;border-radius:50%;
+      display:grid;place-items:center;
+      background:rgba(255,255,255,.08);
+      color:#d6c4ff;
+      font-size:13px;
+    }
+
+    .hero-card{
+      position:relative;
+      border-radius:var(--radius-lg);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.08);
+      background:
+        linear-gradient(135deg, rgba(124,58,237,.24), rgba(124,58,237,.05)),
+        linear-gradient(180deg, #181327 0%, #0f0d18 100%);
+      min-height:610px;
+      box-shadow:var(--shadow);
+      padding:22px;
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;inset:0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,.08), transparent 18%),
+        linear-gradient(130deg, transparent 0 60%, rgba(255,255,255,.04) 60% 62%, transparent 62%);
+      pointer-events:none;
+    }
+
+    .hero-stack{
+      position:relative;
+      z-index:1;
+      display:grid;
+      gap:16px;
+      height:100%;
+    }
+
+    .profile-card{
+      display:grid;
+      grid-template-columns:130px 1fr;
+      gap:18px;
+      padding:18px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+    }
+
+    .profile-photo{
+      height:160px;
+      border-radius:20px;
+      background:
+        radial-gradient(circle at 52% 24%, #f0d7c8 0 10%, transparent 10.4%),
+        radial-gradient(circle at 38% 40%, #2a1a18 0 6%, transparent 6.4%),
+        radial-gradient(circle at 65% 40%, #2a1a18 0 6%, transparent 6.4%),
+        radial-gradient(circle at 51% 57%, #bc8b73 0 7%, transparent 7.4%),
+        radial-gradient(circle at 50% 44%, #e8c0ad 0 25%, transparent 25.3%),
+        radial-gradient(circle at 50% 24%, #22161c 0 22%, transparent 22.2%),
+        linear-gradient(180deg, #3d2a59 0%, #211433 100%);
+      box-shadow:inset 0 0 0 2px rgba(255,255,255,.04);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .profile-photo::after{
+      content:"";
+      position:absolute;
+      left:10px;bottom:10px;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.06em;
+      background:rgba(0,0,0,.45);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.16);
+    }
+
+    .profile-card h3{
+      margin:6px 0 6px;
+      font-size:28px;
+      line-height:1.04;
+      letter-spacing:-.03em;
+    }
+
+    .profile-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .mini-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:12px;
+    }
+
+    .mini-tags span{
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      font-size:12px;
+      font-weight:700;
+      color:#efe9ff;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .gallery-item{
+      min-height:170px;
+      border-radius:22px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.08);
+      position:relative;
+      background:
+        linear-gradient(160deg, rgba(168,85,247,.22), rgba(124,58,237,.08)),
+        linear-gradient(180deg,#251a38,#161222);
+    }
+
+    .gallery-item::before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        linear-gradient(180deg, transparent 0 58%, rgba(0,0,0,.48) 100%),
+        radial-gradient(circle at 25% 20%, rgba(255,255,255,.16), transparent 18%);
+    }
+
+    .gallery-item .scene{
+      position:absolute; inset:0;
+      background-size:cover;
+      opacity:.9;
+    }
+
+    .scene.one{
+      background:
+        linear-gradient(180deg,transparent 55%, rgba(0,0,0,.35)),
+        linear-gradient(90deg,#d5c2ad 0 14%, transparent 14% 19%, #8f6c4d 19% 51%, transparent 51% 56%, #a67d5b 56% 85%, transparent 85%),
+        linear-gradient(180deg,#ece5dd 0 72%, #8d755d 72% 100%);
+    }
+    .scene.two{
+      background:
+        linear-gradient(180deg,transparent 55%, rgba(0,0,0,.32)),
+        linear-gradient(90deg,#e5dbd1 0 18%, #b18861 18% 54%, #d6b496 54% 78%, #6f5641 78% 100%),
+        linear-gradient(180deg,#f4efe9 0 73%, #7c6755 73% 100%);
+    }
+    .scene.three{
+      background:
+        linear-gradient(180deg,transparent 58%, rgba(0,0,0,.3)),
+        linear-gradient(90deg,#b8c2cf 0 14%, #5c6775 14% 44%, #d8e0e8 44% 79%, #7d8792 79% 100%),
+        linear-gradient(180deg,#eef3f6 0 72%, #667384 72% 100%);
+    }
+    .scene.four{
+      background:
+        linear-gradient(180deg,transparent 55%, rgba(0,0,0,.32)),
+        linear-gradient(90deg,#d9d3cb 0 22%, #926d4e 22% 58%, #c1a486 58% 84%, #776252 84% 100%),
+        linear-gradient(180deg,#ece8e3 0 70%, #726052 70% 100%);
+    }
+
+    .gallery-caption{
+      position:absolute;
+      left:14px; right:14px; bottom:14px;
+      z-index:2;
+      display:flex; align-items:end; justify-content:space-between; gap:12px;
+    }
+
+    .gallery-caption strong{
+      display:block;
+      font-size:14px;
+      line-height:1.2;
+    }
+
+    .gallery-caption small{
+      color:#ddd2f8;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .ia-pill{
+      padding:7px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.06em;
+      white-space:nowrap;
+    }
+
+    section{
+      padding:86px 0;
+    }
+
+    .section-head{
+      max-width:780px;
+      margin:0 auto 42px 0;
+    }
+
+    .eyebrow{
+      color:#cdb8ff;
+      font-size:13px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      margin-bottom:10px;
+    }
+
+    h2{
+      margin:0 0 14px;
+      font-size:clamp(32px,5vw,52px);
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:18px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .service-icon{
+      width:58px;height:58px;
+      display:grid;place-items:center;
+      border-radius:18px;
+      margin-bottom:18px;
+      background:linear-gradient(135deg, rgba(124,58,237,.18), rgba(168,85,247,.18));
+      color:#dec7ff;
+      font-size:26px;
+      border:1px solid rgba(255,255,255,.05);
+    }
+
+    .card h3{
+      margin:0 0 8px;
+      font-size:21px;
+      line-height:1.15;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .highlight-box{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .highlight{
+      padding:28px;
+      border-radius:28px;
+      background:linear-gradient(135deg, rgba(124,58,237,.24), rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .highlight strong{
+      display:block;
+      font-size:26px;
+      margin-bottom:8px;
+      letter-spacing:-.03em;
+    }
+
+    .highlight p{
+      margin:0;
+      color:#e4dff2;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .step-number{
+      width:46px;height:46px;
+      border-radius:14px;
+      display:grid;place-items:center;
+      margin-bottom:16px;
+      background:linear-gradient(135deg, var(--primary), var(--primary-2));
+      font-weight:900;
+      box-shadow:0 10px 24px rgba(124,58,237,.25);
+    }
+
+    .proof-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .testimonial-wrap{
+      display:grid;
+      gap:18px;
+    }
+
+    .testimonial{
+      position:relative;
+    }
+
+    .stars{
+      font-size:16px;
+      letter-spacing:2px;
+      color:#fbbf24;
+      margin-bottom:12px;
+    }
+
+    .testimonial p{
+      font-size:16px;
+      color:#ede9ff;
+      margin:0 0 16px;
+    }
+
+    .testimonial .author{
+      color:#bcaef2;
+      font-weight:800;
+      font-size:14px;
+    }
+
+    .about-box{
+      display:grid;
+      grid-template-columns:270px 1fr;
+      gap:24px;
+      align-items:center;
+    }
+
+    .about-photo{
+      height:320px;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at 50% 25%, #f1d8c8 0 10%, transparent 10.4%),
+        radial-gradient(circle at 38% 39%, #2a1a18 0 5.8%, transparent 6.1%),
+        radial-gradient(circle at 64% 39%, #2a1a18 0 5.8%, transparent 6.1%),
+        radial-gradient(circle at 50% 54%, #bd8d74 0 7%, transparent 7.3%),
+        radial-gradient(circle at 50% 44%, #ebc2ae 0 26%, transparent 26.2%),
+        radial-gradient(circle at 50% 22%, #2b1d20 0 21%, transparent 21.2%),
+        linear-gradient(180deg, #4d3775 0%, #231631 100%);
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:var(--shadow);
+    }
+
+    .about-photo::after{
+      content:"";
+      position:absolute;
+      left:14px; bottom:14px;
+      background:rgba(0,0,0,.4);
+      border:1px solid rgba(255,255,255,.12);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+    }
+
+    .about-text p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .faq{
+      display:grid;
+      gap:14px;
+    }
+
+    details{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      padding:18px 20px;
+    }
+
+    summary{
+      cursor:pointer;
+      font-weight:800;
+      list-style:none;
+    }
+
+    summary::-webkit-details-marker{display:none}
+    details p{
+      margin:12px 0 0;
+      color:var(--muted);
+    }
+
+    .final-cta{
+      border-radius:32px;
+      padding:42px;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(255,255,255,.18), transparent 20%),
+        linear-gradient(135deg, var(--primary), var(--primary-2));
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .final-cta h2{
+      margin-bottom:10px;
+      max-width:700px;
+      font-size:clamp(30px,4vw,48px);
+    }
+
+    .final-cta p{
+      margin:0;
+      max-width:680px;
+      color:#efe7ff;
+      font-size:17px;
+    }
+
+    footer{
+      padding:30px 0 100px;
+      color:#a8a2be;
+    }
+
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:14px;
+      padding-top:26px;
+      border-top:1px solid rgba(255,255,255,.08);
+      font-size:14px;
+    }
+
+    .floating-wa{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:120;
+      width:62px;height:62px;
+      border-radius:50%;
+      display:grid;place-items:center;
+      background:var(--whatsapp);
+      color:white;
+      box-shadow:0 16px 40px rgba(0,0,0,.32);
+      animation:pulse 2s infinite;
+    }
+
+    .floating-wa svg{width:28px;height:28px}
+
+    @keyframes pulse{
+      0%,100%{
+        box-shadow:0 16px 40px rgba(0,0,0,.32), 0 0 0 0 rgba(37,211,102,.35);
+      }
+      50%{
+        box-shadow:0 16px 40px rgba(0,0,0,.32), 0 0 0 14px rgba(37,211,102,0);
+      }
+    }
+
+    @media (max-width: 980px){
+      .nav-links{display:none}
+      .hero-grid,
+      .proof-grid,
+      .about-box,
+      .final-cta{
+        grid-template-columns:1fr;
+      }
+      .services, .steps{
+        grid-template-columns:1fr 1fr;
+      }
+      .highlight-box{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 640px){
+      .container{width:min(calc(100% - 22px), var(--max))}
+      .nav .btn{display:none}
+      .hero{padding-top:58px}
+      .services, .steps, .gallery-grid{
+        grid-template-columns:1fr;
+      }
+      .profile-card{
+        grid-template-columns:1fr;
+      }
+      .about-box{
+        gap:18px;
+      }
+      .about-photo{
+        height:280px;
+      }
+      .hero-card{
+        min-height:auto;
+      }
+      .final-cta{
+        padding:30px 24px;
+      }
+      .btn{
+        width:100%;
+      }
+      .hero-actions{
+        display:grid;
+      }
+      .footer-row{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#inicio">
+        <span class="brand-icon">🛠️</span>
+        <span>
+          <small>Montagem de Móveis</small>
+          <strong>Cleiton, o Montador</strong>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn-whatsapp js-wa" href="#">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12c0 1.77.46 3.49 1.34 5.01L2 22l5.12-1.31A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.51 22 12c0-2.65-1.03-5.14-2.95-7.06Zm-7.03 15.37a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.78.81-2.96-.2-.31A8.3 8.3 0 0 1 3.7 12a8.33 8.33 0 0 1 8.32-8.31 8.27 8.27 0 0 1 5.88 2.44A8.24 8.24 0 0 1 20.35 12a8.33 8.33 0 0 1-8.33 8.31Zm4.57-6.24c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06a6.76 6.76 0 0 1-1.99-1.23 7.48 7.48 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.11 0 1.25.9 2.45 1.03 2.62.13.17 1.78 2.72 4.32 3.81.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+        </svg>
+        Orçamento no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge"><span class="badge-dot"></span> Montagem profissional em Ribeirão Preto e região</span>
+          <h1>O único trabalho que você vai ter é <span style="color:#d8b4fe;">escolher onde o móvel vai ficar.</span></h1>
+          <p>
+            <strong>Cleiton, o Montador</strong> atende Ribeirão Preto e região com montagem, desmontagem e instalação feitas com capricho, organização e praticidade.
+            Você chama no WhatsApp, combina o serviço e deixa o resto com quem entende.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-whatsapp js-wa" href="#">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12c0 1.77.46 3.49 1.34 5.01L2 22l5.12-1.31A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.51 22 12c0-2.65-1.03-5.14-2.95-7.06Zm-7.03 15.37a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.78.81-2.96-.2-.31A8.3 8.3 0 0 1 3.7 12a8.33 8.33 0 0 1 8.32-8.31 8.27 8.27 0 0 1 5.88 2.44A8.24 8.24 0 0 1 20.35 12a8.33 8.33 0 0 1-8.33 8.31Zm4.57-6.24c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06a6.76 6.76 0 0 1-1.99-1.23 7.48 7.48 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.11 0 1.25.9 2.45 1.03 2.62.13.17 1.78 2.72 4.32 3.81.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+              </svg>
+              Pedir orçamento agora
+            </a>
+            <a class="btn btn-soft" href="#servicos">Ver serviços</a>
+          </div>
+
+          <div class="hero-points">
+            <span><i class="point">✓</i> Atendimento direto</span>
+            <span><i class="point">✓</i> Móveis residenciais e corporativos</span>
+            <span><i class="point">✓</i> Orçamento rápido pelo WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-stack">
+            <div class="profile-card">
+              <div class="profile-photo" aria-label="Cleiton, o Montador"></div>
+              <div>
+                <div class="eyebrow" style="margin-bottom:8px;">Especialista em montagem</div>
+                <h3>Cleiton, o Montador</h3>
+                <p>
+                  Atendimento profissional para quem quer o móvel pronto, bem montado e sem dor de cabeça.
+                </p>
+                <div class="mini-tags">
+                  <span>Montagem</span>
+                  <span>Desmontagem</span>
+                  <span>Instalações</span>
+                  <span>Atendimento rápido</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <div class="scene one"></div>
+                <div class="gallery-caption">
+                  <div>
+                    <strong>Guarda-roupa montado</strong>
+                    <small>Montagem profissional</small>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="scene two"></div>
+                <div class="gallery-caption">
+                  <div>
+                    <strong>Cozinha planejada</strong>
+                    <small>Montagem profissional</small>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="scene three"></div>
+                <div class="gallery-caption">
+                  <div>
+                    <strong>Escritório corporativo</strong>
+                    <small>Montagem profissional</small>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <div class="scene four"></div>
+                <div class="gallery-caption">
+                  <div>
+                    <strong>Rack e painel</strong>
+                    <small>Montagem profissional</small>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Serviços</div>
+          <h2>Serviço bem feito, sem dor de cabeça.</h2>
+          <p>
+            Montagem, desmontagem e instalação de móveis com cuidado, organização e atenção aos detalhes.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="card">
+            <div class="service-icon">🪛</div>
+            <h3>Montagem de móveis residenciais</h3>
+            <p>Guarda-roupas, racks, estantes, cômodas, camas, mesas, armários e outros móveis para sua casa.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">🏢</div>
+            <h3>Montagem de móveis corporativos</h3>
+            <p>Mesas, estações de trabalho, armários, arquivos e organização de ambientes comerciais.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">📦</div>
+            <h3>Desmontagem e remontagem</h3>
+            <p>Ideal para mudanças, reorganização do ambiente ou transporte de móveis com mais praticidade.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">📺</div>
+            <h3>Painéis, nichos e prateleiras</h3>
+            <p>Instalação de estruturas que deixam o ambiente mais bonito, funcional e bem aproveitado.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">🛏️</div>
+            <h3>Montagem de diversos tipos de móveis</h3>
+            <p>Montagem para móveis novos, modulados e diferentes necessidades do seu ambiente.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">💬</div>
+            <h3>Orçamento rápido pelo WhatsApp</h3>
+            <p>Envie uma foto, descrição ou modelo do móvel e receba atendimento direto para fechar mais rápido.</p>
+          </article>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight">
+            <strong>Sem complicação.</strong>
+            <p>Você não precisa se virar com manual, parafuso sobrando e horas perdidas. O Cleiton resolve.</p>
+          </div>
+          <div class="highlight">
+            <strong>Do jeito certo, desde o começo.</strong>
+            <p>Cuidado na montagem, organização durante o serviço e atenção aos detalhes para deixar tudo no lugar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Projetos realizados</div>
+          <h2>Exemplos visuais para gerar confiança.</h2>
+          <p>
+            Veja alguns tipos de ambientes e móveis que podem receber um serviço de montagem profissional.
+          </p>
+        </div>
+
+        <div class="gallery-grid" style="grid-template-columns:repeat(4,1fr);">
+          <div class="gallery-item" style="min-height:250px;">
+            <div class="scene one"></div>
+            <div class="gallery-caption">
+              <div><strong>Quarto planejado</strong><small>Serviço de montagem</small></div>
+              
+            </div>
+          </div>
+
+          <div class="gallery-item" style="min-height:250px;">
+            <div class="scene two"></div>
+            <div class="gallery-caption">
+              <div><strong>Cozinha montada</strong><small>Serviço de montagem</small></div>
+              
+            </div>
+          </div>
+
+          <div class="gallery-item" style="min-height:250px;">
+            <div class="scene three"></div>
+            <div class="gallery-caption">
+              <div><strong>Escritório funcional</strong><small>Serviço de montagem</small></div>
+              
+            </div>
+          </div>
+
+          <div class="gallery-item" style="min-height:250px;">
+            <div class="scene four"></div>
+            <div class="gallery-caption">
+              <div><strong>Sala com painel</strong><small>Serviço de montagem</small></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Como funciona</div>
+          <h2>Rápido, simples e direto.</h2>
+          <p>Você chama no WhatsApp, envia as informações do móvel e combina o serviço de forma simples.</p>
+        </div>
+
+        <div class="steps">
+          <article class="card">
+            <div class="step-number">1</div>
+            <h3>Chame no WhatsApp</h3>
+            <p>Clique no botão verde e fale diretamente com o Cleiton sobre o que você precisa montar ou desmontar.</p>
+          </article>
+
+          <article class="card">
+            <div class="step-number">2</div>
+            <h3>Envie as informações</h3>
+            <p>Se tiver foto, modelo ou descrição do móvel, melhor ainda. Isso ajuda no orçamento rápido.</p>
+          </article>
+
+          <article class="card">
+            <div class="step-number">3</div>
+            <h3>Feche o serviço</h3>
+            <p>Depois é só combinar o atendimento e deixar o trabalho com quem manja do assunto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Pode deixar com o Cleiton</div>
+          <h2>Mais praticidade para você. Mais cuidado com seu móvel.</h2>
+          <p>Da primeira mensagem até o móvel pronto, o atendimento é direto e sem complicação.</p>
+        </div>
+
+        <div class="services">
+          <article class="card">
+            <div class="service-icon">🛠️</div>
+            <h3>Montagem com cuidado</h3>
+            <p>Atenção em cada etapa para montar seu móvel com organização e bom acabamento.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">⚡</div>
+            <h3>Atendimento prático</h3>
+            <p>Envie fotos e informações pelo WhatsApp e combine tudo de forma rápida e direta.</p>
+          </article>
+
+          <article class="card">
+            <div class="service-icon">🏠</div>
+            <h3>Seu ambiente pronto</h3>
+            <p>Você escolhe onde o móvel vai ficar. O Cleiton cuida da montagem.</p>
+          </article>
+        </div>
+
+        <div class="card" id="sobre" style="margin-top:18px;">
+          <div class="about-box">
+            <div class="about-photo" aria-label="Cleiton, o Montador"></div>
+            <div class="about-text">
+              <div class="eyebrow">Sobre</div>
+              <h2 style="font-size:36px;margin-bottom:12px;">Cleiton, o Montador</h2>
+              <p>Montagem e desmontagem de móveis com praticidade, cuidado e serviço bem feito.</p>
+              <p>Seja para um móvel novo, uma mudança ou uma reorganização do ambiente, você fala direto com quem vai executar o serviço.</p>
+              <p>Precisa de ajuda com seu móvel? Chame no WhatsApp, envie as informações e peça seu orçamento.</p>
+              <a class="btn btn-whatsapp js-wa" href="#" style="margin-top:8px;">
+                <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12c0 1.77.46 3.49 1.34 5.01L2 22l5.12-1.31A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.51 22 12c0-2.65-1.03-5.14-2.95-7.06Zm-7.03 15.37a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.78.81-2.96-.2-.31A8.3 8.3 0 0 1 3.7 12a8.33 8.33 0 0 1 8.32-8.31 8.27 8.27 0 0 1 5.88 2.44A8.24 8.24 0 0 1 20.35 12a8.33 8.33 0 0 1-8.33 8.31Zm4.57-6.24c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06a6.76 6.76 0 0 1-1.99-1.23 7.48 7.48 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.11 0 1.25.9 2.45 1.03 2.62.13.17 1.78 2.72 4.32 3.81.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+                </svg>
+                Falar com Cleiton
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Perguntas frequentes</div>
+          <h2>Dúvidas que ajudam a converter.</h2>
+          <p>Confira algumas dúvidas comuns antes de solicitar seu orçamento.</p>
+        </div>
+
+        <div class="faq">
+          <details open>
+            <summary>Quais serviços o Cleiton oferece?</summary>
+            <p>Montagem e desmontagem de móveis, além de instalações e atendimentos relacionados a organização e montagem de ambientes.</p>
+          </details>
+
+          <details>
+            <summary>Como funciona o orçamento?</summary>
+            <p>Entre em contato pelo WhatsApp, explique o que precisa e, se possível, envie fotos ou detalhes do móvel para facilitar o orçamento.</p>
+          </details>
+
+          <details>
+            <summary>O atendimento é em Ribeirão Preto e região?</summary>
+            <p>Sim. O Cleiton atende Ribeirão Preto e região. Chame no WhatsApp para consultar a disponibilidade para o seu endereço.</p>
+          </details>
+
+          <details>
+            <summary>Preciso enviar fotos do móvel?</summary>
+            <p>Sim. Envie fotos ou informações do móvel pelo WhatsApp para facilitar a análise e o orçamento.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta">
+          <div>
+            <h2>Seu móvel ainda está na caixa?</h2>
+            <p>Então já tem um problema para resolver. Clique no botão e fale agora com o Cleiton pelo WhatsApp para pedir seu orçamento.</p>
+          </div>
+
+          <a class="btn btn-whatsapp js-wa" href="#" style="min-width:260px;">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12c0 1.77.46 3.49 1.34 5.01L2 22l5.12-1.31A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.51 22 12c0-2.65-1.03-5.14-2.95-7.06Zm-7.03 15.37a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.78.81-2.96-.2-.31A8.3 8.3 0 0 1 3.7 12a8.33 8.33 0 0 1 8.32-8.31 8.27 8.27 0 0 1 5.88 2.44A8.24 8.24 0 0 1 20.35 12a8.33 8.33 0 0 1-8.33 8.31Zm4.57-6.24c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06a6.76 6.76 0 0 1-1.99-1.23 7.48 7.48 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.11 0 1.25.9 2.45 1.03 2.62.13.17 1.78 2.72 4.32 3.81.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+            </svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Cleiton, o Montador.</span>
+      <span>Montagem de móveis com cuidado, agilidade e capricho.</span>
+    </div>
+  </footer>
+
+  <a class="floating-wa js-wa" href="#" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2C6.5 2 2 6.49 2 12c0 1.77.46 3.49 1.34 5.01L2 22l5.12-1.31A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.51 22 12c0-2.65-1.03-5.14-2.95-7.06Zm-7.03 15.37a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.78.81-2.96-.2-.31A8.3 8.3 0 0 1 3.7 12a8.33 8.33 0 0 1 8.32-8.31 8.27 8.27 0 0 1 5.88 2.44A8.24 8.24 0 0 1 20.35 12a8.33 8.33 0 0 1-8.33 8.31Zm4.57-6.24c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06a6.76 6.76 0 0 1-1.99-1.23 7.48 7.48 0 0 1-1.38-1.72c-.15-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.11 0 1.25.9 2.45 1.03 2.62.13.17 1.78 2.72 4.32 3.81.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.29Z"/>
+    </svg>
+  </a>
+
+  <script>
+    // TROQUE PELO WHATSAPP REAL DO CLEITON (somente números, com DDI e DDD)
+    // WhatsApp do Cleiton: +55 16 99105-0002
+    const WHATSAPP_NUMBER = "5516991050002";
+
+    const msg = encodeURIComponent("Olá, Cleiton! Vi seu site e gostaria de pedir um orçamento.");
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+
+    document.querySelectorAll(".js-wa").forEach(el => {
+      el.href = waUrl;
+      el.target = "_blank";
+      el.rel = "noopener noreferrer";
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
